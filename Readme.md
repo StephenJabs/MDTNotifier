@@ -6,7 +6,7 @@ MDT Notifier is a helper application for MDT 2013 that reads the Application Eve
 41016 = Deployment completed successfully
 
 
-It works in conjunction with a scheduled task that monitors the application log for these events.
+It works in conjunction with a scheduled task that monitors the application log for these events.  See MDT_Monitor.xml for an example task configuration that can be imported, or manually follow these steps:
 
 Step 1.
 Create a scheduled task in Task Scheduler.
