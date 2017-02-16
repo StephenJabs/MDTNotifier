@@ -5,4 +5,17 @@ MDT Notifier is a helper application for MDT 2013 that reads the Application Eve
 41015 = Deployment started  
 41016 = Deployment completed successfully
 
+
 It works in conjunction with a scheduled task that monitors the application log for these events.
+
+Step 1.
+Create a scheduled task in Task Scheduler.
+
+Step 2.
+Set four triggers for "On an event" that look in the Application log for source MDT_Monitor and the specified Event ID's.
+
+Step 3.
+Create an action for "Start a Program" that runs MDTNotifier.exe with arguments web.config and a Start in location of the application.
+
+Step 4.
+Save the task, providing credentials to an account that has permissions to run the task whether the user is logged on or not.
